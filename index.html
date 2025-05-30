@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="logo stylish-logo">Logo</div>
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+    <ul class="chat-list" id="chatList">
+      <li class="active" data-user="Emma Thompson"><div class="avatar" style="background:#5b42f3;">EM</div><div class="chat-info"><div class="name">Emma Thompson</div><div class="last-message">I've sent you the latest project f...</div></div></li>
+      <li data-user="Michael Johnson"><div class="avatar" style="background:#59c27d;">MJ</div><div class="chat-info"><div class="name">Michael Johnson</div><div class="last-message">Are we still meeting for coffee to...</div></div></li>
+      <li data-user="Sophia Lee"><div class="avatar" style="background:#d8b4fe;">SL</div><div class="chat-info"><div class="name">Sophia Lee</div><div class="last-message">The design team loved your pre...</div></div></li>
+      <li data-user="Robert Brown"><div class="avatar" style="background:#fcd34d;">RB</div><div class="chat-info"><div class="name">Robert Brown</div><div class="last-message">Can you review the budget prop...</div></div></li>
+      <li data-user="Amelia Wilson"><div class="avatar" style="background:#fda4af;">AW</div><div class="chat-info"><div class="name">Amelia Wilson</div><div class="last-message">Thanks for your help with the cli...</div></div></li>
+      <li data-user="Daniel Martinez"><div class="avatar" style="background:#a5b4fc;">DM</div><div class="chat-info"><div class="name">Daniel Martinez</div><div class="last-message">Let's schedule a call to discuss t...</div></div></li>
+      <li data-user="Lily Scott"><div class="avatar" style="background:#06b6d4;">LS</div><div class="chat-info"><div class="name">Lily Scott</div><div class="last-message">Just finalized the invoice...</div></div></li>
+      <li data-user="Jason Clark"><div class="avatar" style="background:#f97316;">JC</div><div class="chat-info"><div class="name">Jason Clark</div><div class="last-message">Can you send over the assets?...</div></div></li>
+      <li data-user="Robert Brown"><div class="avatar" style="background:#fcd34d;">RB</div><div class="chat-info"><div class="name">Robert Brown</div><div class="last-message">Can you review the budget prop...</div></div></li>
+    <li data-user="Michael Johnson"><div class="avatar" style="background:#59c27d;">MJ</div><div class="chat-info"><div class="name">Michael Johnson</div><div class="last-message">Are we still meeting for coffee to...</div></div></li>
+      <li data-user="Sophia Lee"><div class="avatar" style="background:#d8b4fe;">SL</div><div class="chat-info"><div class="name">Sophia Lee</div><div class="last-message">The design team loved your pre...</div></div></li>
+      <li data-user="Lily Scott"><div class="avatar" style="background:#06b6d4;">LS</div><div class="chat-info"><div class="name">Lily Scott</div><div class="last-message">Just finalized the invoice...</div></div></li>
+    </ul>
+  </div>
+  <div class="chat-window">
+    <div class="chat-header">
+      <div class="chat-header-left">
+        <div class="name" id="chatName">Emma Thompson</div>
+        <div class="status">Online</div>
+      </div>
+      <div class="chat-header-right">
+        <div class="user-menu">
+          <div class="user-avatar" style="background:#5b42f3;">JD</div>
+          <div class="dropdown">
+            <!-- <button class="dropdown-toggle">▼</button> -->
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="messages" id="messages">
+      <div class="message received">Oh, I almost forgot - do you have the latest version of the client presentation? I want to make sure we’re all on the same page for tomorrow.<div class="timestamp">12:05 PM</div></div>
+      <div class="message sent">I’ve just sent it to your email. It includes all the updates we discussed in the last meeting. Let me know if you need anything else!<div class="timestamp">12:15 PM <span class="status">Sent</span></div></div>
+      <div class="message received">Got it, thanks! I’ll review it before our lunch. See you soon!<div class="timestamp">12:20 PM</div></div>
+      <div class="message sent">Looking forward to it! 🔥<div class="timestamp">12:25 PM <span class="status">Delivered</span></div></div>
+    </div>
+    <div class="typing-indicator" id="typingIndicator">Typing...</div>
+    <div class="message-input">
+      <input type="text" placeholder="Type your message..." />
+      <button>➤</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
